@@ -1,0 +1,1 @@
+include ':app', ':zxinglite', ':library', ':library_citypicker', ':library_imagepicker'

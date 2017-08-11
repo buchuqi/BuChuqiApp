@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JD.iml" filepath="$PROJECT_DIR$/JD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_citypicker/library_citypicker.iml" filepath="$PROJECT_DIR$/library_citypicker/library_citypicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_imagepicker/library_imagepicker.iml" filepath="$PROJECT_DIR$/library_imagepicker/library_imagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxinglite/zxinglite.iml" filepath="$PROJECT_DIR$/zxinglite/zxinglite.iml" />
+    </modules>
+  </component>
+</project>

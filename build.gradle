@@ -1,0 +1,30 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        /**android-apt*/
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        /**Realm java*/
+        classpath "io.realm:realm-gradle-plugin:3.1.4"
+        /**gradle 对JCenter的支持*/
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        /**gradle 对maven的支持*/
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

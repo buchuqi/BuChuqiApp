@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <jd.com.weight.MultiStateView
+        android:id="@+id/msv_lesson_state_view"
+        style="@style/MultiStateView"
+        app:msv_viewState="loading">
+
+        <jd.com.library.weight.refresh.MaterialRefreshLayout
+            android:id="@+id/mrl_lesson_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:isLoadMore="true"
+            app:overlay="false"
+            app:progress_backgroud_color="@color/theme_color"
+            app:progress_colors="@array/material_colors"
+            app:progress_show_arrow="true"
+            app:progress_show_circle_backgroud="true"
+            app:wave_color="@color/transparent"
+            app:wave_height_type="normal"
+            app:wave_show="true">
+
+
+            <jd.com.weight.smoothListView.SmoothListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+        </jd.com.library.weight.refresh.MaterialRefreshLayout>
+    </jd.com.weight.MultiStateView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/transparent"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp">
+
+            <View
+                android:id="@+id/view_title_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/color_70000000" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="StickyHeaderListView"
+                android:textColor="@color/color_dddddd"
+                android:textSize="17sp" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

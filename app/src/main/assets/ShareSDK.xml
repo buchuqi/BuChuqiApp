@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <ShareSDK AppKey="12eafa9366d92" /> <!-- 修改成你在sharesdk后台注册的应用的appkey"-->
+
+    <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
+    <SinaWeibo AppKey="2265605598"
+        AppSecret="759038da4e752b2cbfc1c395d4a7582a"
+        Enable="true"
+        Id="1"
+        RedirectUrl="http://yst.vodjk.com"
+        ShareByAppClient="true"
+        SortId="1" />
+
+    <Wechat AppId="wxcbc1adad07ff8c14"
+        AppSecret="2e989d798dcb47935513affd9fbac288"
+        BypassApproval="false"
+        Enable="true"
+        Id="4"
+        SortId="4" />
+    <WechatMoments AppId="wxcbc1adad07ff8c14"
+        AppSecret="2e989d798dcb47935513affd9fbac288"
+        BypassApproval="false"
+        Enable="true"
+        Id="5"
+        SortId="5" />
+
+    <WechatFavorite AppId="wxcbc1adad07ff8c14"
+        AppSecret="2e989d798dcb47935513affd9fbac288"
+        Enable="true"
+        Id="6"
+        SortId="6" />
+
+    <QQ AppId="1105548841"
+        AppKey="V7jygZLGxQLpvxRn"
+        Enable="true"
+        Id="7"
+        ShareByAppClient="true"
+        SortId="7" />
+
+    <QZone AppId="1105548841"
+        AppKey="V7jygZLGxQLpvxRn"
+        Enable="true"
+        Id="3"
+        SortId="3" />
+</DevInfor>

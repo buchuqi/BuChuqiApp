@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--药店工具-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x94"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/x26"
+    android:paddingRight="@dimen/x26">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_asc_icon"
+        android:layout_width="@dimen/x66"
+        android:layout_height="@dimen/x66"
+        android:scaleType="fitXY"
+        fresco:actualImageScaleType="centerInside"
+        fresco:placeholderImageScaleType="fitXY"
+        fresco:roundAsCircle="false" />
+
+    <TextView
+        android:id="@+id/tv_asc_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_weight="1"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

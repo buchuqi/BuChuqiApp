@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--加载状态自定义控件在布局文件中style的抽取-->
+    <style name="MultiStateView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/layout_background</item>
+        <item name="msv_animateViewChanges">true</item>
+        <item name="msv_emptyView">@layout/state_empty</item>
+        <item name="msv_errorView">@layout/state_error</item>
+        <item name="msv_loadingView">@layout/state_loading</item>
+    </style>
+</resources>

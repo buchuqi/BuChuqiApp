@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JDApp</string>
+    <!--主界面-->
+    <string name="tab_lesson">主页</string>
+    <string name="tab_message">搜索</string>
+    <string name="tab_news">约会</string>
+    <string name="tab_company">聚会</string>
+    <string name="tab_setting">我</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">点击扫码</string>
+</resources>

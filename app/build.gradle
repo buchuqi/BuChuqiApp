@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'realm-android'
+
+def outputDir = "C:/Users/xinma/Desktop"
+def startName = "start"
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    signingConfigs {
+        config {
+            keyAlias 'hfl'
+            keyPassword 'vod_jk'
+            storeFile file('C:/Users/xinma/Desktop/hfl.jks')
+            storePassword 'vod_jk'
+        }
+    }
+    defaultConfig {
+        applicationId "com.vodjk.yst"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName '1.0.0'
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    /** android gms:*/
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    /** android support*/
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:support-v4:25.1.1'
+    /** multidex */
+    compile 'com.android.support:multidex:1.0.1'
+    compile project(':zxinglite')
+    compile project(':library')
+    compile project(':library_citypicker')
+    compile project(':library_imagepicker')
+}
